@@ -89,6 +89,7 @@ h1 {
 }
 
 .nav__list a {
+    text-transform: uppercase;
     background-color: transparent;
     text-decoration: none;
     color: aliceblue;
@@ -105,21 +106,22 @@ h1 {
 }
 
 .btn-contact {
+    letter-spacing: .1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor: pointer;
     font-size: 1rem;
-    font-style: italic;
     padding: 0.8rem 1.5rem;
     color: aliceblue; 
-    background-color: rgba(0, 0, 0, 0.015);
+    background-color: rgba(26, 6, 141, 0.021);
     backdrop-filter: blur(10px);
-    border: 0.5px solid rgba(255, 255, 255, 0.127);
+    border: 0.5px solid rgba(85, 0, 243, 0.127);
     border-radius: 1rem;
     transition: border .3s, box-shadow .3s;
 }
 
 .btn-contact:hover {
-    box-shadow: 0 0 3px aliceblue;
-    border: 1px solid rgba(255, 255, 255, 0.311);
+    box-shadow: 0 0 3px rgb(4, 0, 250);
+    border: 1px solid rgba(25, 0, 255, 0.311);
     transition: border .3s, box-shadow .3s;
 }
 
@@ -269,6 +271,32 @@ main {
       50% {transform: translateY(-90px);}
       100% {transform: translateY(0);}
   }
+
+.about-us__section {
+    margin-top: 5rem;
+    padding: 1rem
+}
+.about-us__container {
+    width: 750px;
+    border: 2px solid rgba(196, 196, 218, 0.096);
+    border-radius: 20px;
+    box-shadow: -10px 9px 30px rgba(102, 102, 102, 0.342);
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+.about-us__container h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+
+
+
+
+
 
 }
 
