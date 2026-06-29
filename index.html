@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>AXI Effects - Una galeria de efectos y animaciones para tu pagina</title>
+    <title>AXI Buttoms - Una galeria de efectos y animaciones para botones</title>
 </head>
 <body>
     <img class="image-gradient" src="./gradient.png" alt="gradient">
@@ -13,14 +13,14 @@
 
     <div class="container">
         <header>
-            <h1 data-aos="fade-down" data-aos-duration="1500"> AXI Effects </h1>
+            <h1 data-aos="fade-down" data-aos-duration="1500">AXI Buttoms</h1>
 
             <nav class="nav">
                 <ul class="nav__ul">
                     <li data-aos="fade-down" data-aos-duration="1600" class="nav__list"><a href="#">Nosotros</a></li>
-                    <li data-aos="fade-down" data-aos-duration="1700" class="nav__list"><a href="#">Efectos CSS</a></li>
-                    <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">Efectos JS</a></li>
-                     <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">Efectos GSAP</a></li>
+                    <li data-aos="fade-down" data-aos-duration="1700" class="nav__list"><a href="#">Only CSS</a></li>
+                    <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">With JS</a></li>
+                     <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">With GSAP</a></li>
                 </ul>
             </nav>
 
@@ -37,7 +37,7 @@
         
 
         <h2> GALERIA DE <br>ANIMACIONES Y EFECTOS</h2>
-        <p class="description">Aqui podras encontrar de todo!, desde efectos y animaciones basicas con css, hasta estilos y funcionamientos mas complejos  con Javascript, junto a librerias de todo tipo.</p>
+        <p class="description">Aqui podras encontrar todo tipo de botones!, desde efectos y animaciones basicas con css, hasta estilos y funcionamientos mas complejos con Javascript y GSAP.</p>
 
         <div class="buttoms">
             <a href="#" class="btn-get-started">Repositorio &gt;</a>
@@ -58,6 +58,61 @@
     </div>
 </section>
     <section class="css-section">
+        <div class="css__container">
+
+            <div class="buttoms__panel">
+                <button class="btn-opcion btn-left-to-right" data-code=".btn-left-to-right {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: blue;
+    background-color: transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.btn-left-to-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+.btn-left-to-right:hover {
+    color: #ffffff;
+}
+.btn-left-to-right:hover::before {
+    transform: scaleX(1);
+}">Buttom</button>
+            <button class="btn-opcion btn-wave" data-code="holis">Buttom</button>
+             <button class="btn-opcion" data-code="holis">Buttom</button>
+              <button class="btn-opcion" data-code="holis">Buttom</button>
+               <button class="btn-opcion" data-code="holis">Buttom</button>
+                <button class="btn-opcion" data-code="holis">Buttom</button>
+                 <button class="btn-opcion" data-code="holis">Buttom</button>
+                  <button class="btn-opcion" data-code="holis">Buttom</button>
+                   <button class="btn-opcion" data-code="holis">Buttom</button>
+                    <button class="btn-opcion" data-code="holis">Buttom</button>
+            </div>
+
+            <div class="code__panel">
+                <button id="btn-copy" class="buttom-copiar">Copy</button>
+
+                <pre><code id="pantalla-codigo">Presione algun boton para ver su codigo...</code></pre>
+            </div>
+
+        </div>
 
     </section>
 
@@ -67,5 +122,7 @@
   <script>
     AOS.init();
   </script>
+
+  <script src="script.js"></script>
 </body>
 </html>
