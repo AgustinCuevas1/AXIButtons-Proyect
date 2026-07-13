@@ -100,20 +100,22 @@ h1 {
 
 .nav__list a:hover {
     font-size: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.223);
+    border-bottom: 1px solid rgba(0, 38, 255, 0.223);
     transition: border-bottom .3s, font-size .3s;
 }
 
-.btn-contact {
-    letter-spacing: .1rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.aexaz-navbar {
+    max-width: 7.5rem;
+    width: 100%;
+    height: 4rem;
+    background-image: url(./navbar\ icon.png);
+    background-position: center;
+    background-size: cover;
     cursor: pointer;
     font-size: 1rem;
-    padding: 0.8rem 1.5rem;
     color: aliceblue; 
     background-color: rgba(26, 6, 141, 0.021);
     backdrop-filter: blur(10px);
-    border: 0.5px solid rgba(85, 0, 243, 0.127);
     border-radius: 1rem;
     transition: border .3s, box-shadow .3s;
 }
@@ -171,7 +173,7 @@ main {
 }
 
 .tagbox .tag:hover {
-    color: rgb(178, 3, 56)
+    color: rgb(4, 8, 248)
 }
 
 .content h2 {
@@ -235,7 +237,7 @@ main {
 .boing__ball {
     width: 200px;
     height: 200px;
-    background: linear-gradient(135deg, rgb(83, 7, 7), rgb(178, 3, 166), rgb(21, 4, 131), rgb(6, 180, 78), rgb(83, 3, 231), rgb(187, 6, 163), rgb(172, 0, 252), rgb(135, 3, 211), rgb(26, 2, 133), rgb(94, 1, 201));
+    background: linear-gradient(135deg, rgb(34, 24, 170), rgb(50, 3, 178), rgb(21, 4, 131), rgb(3, 112, 236), rgb(83, 3, 231), rgb(0, 31, 204), rgb(30, 19, 194), rgb(31, 11, 146), rgb(26, 2, 133), rgb(94, 1, 201));
     background-size: 200% 200%;
     background-position: 0%;
     animation: bounce 6s ease-in-out infinite, AnimationGradientBalls 4s infinite;
@@ -296,9 +298,16 @@ main {
     display: flex;
     gap: 20px;
 }
+
+button {
+    cursor: pointer;
+}
+
 .buttoms__panel {
     min-width: 500px;
     max-width: 700px;
+    max-height: 50rem;
+    height: 100%;
     padding: 3rem;
     background-color: transparent;
     border: 1px solid rgb(3, 3, 104);
@@ -337,14 +346,29 @@ main {
     padding: 5rem 2rem;
     border-radius: 10px;
     min-width: 400px;
-    height: auto;
+    max-height: 42.3rem;
+    height: 100%;
+    overflow: auto;
+    scrollbar-color: rgb(10, 10, 141) transparent;
+    scrollbar-width: auto;
+    height: 100%;
+}
+.code__panel::-webkit-scrollbar {
+    width: 16px;
+    background: transparent;
+}
+.code__panel::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+.code__panel::-webkit-scrollbar-thumb {
+    background: rgb(13, 13, 119);
+    border-radius: 10px;
 }
 
 .btn-left-to-right {
     position: relative;
     display: inline-block;
-    padding: 15px 30px;
-    font-size: 16px;
     font-weight: bold;
     color: blue;
     background-color: transparent;
@@ -375,11 +399,62 @@ main {
     transform: scaleX(1);
 }
 
+.btn-wave {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+    background-color: transparent;
+    border: 2px solid rgb(0, 110, 255);
+    cursor: pointer;
+    transition: color 0.4s ease, border 0.4s ease;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 12px 24px;
+}
 
+.btn-wave::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,50 C25,75 75,25 100,50 L100,100 L0,100 Z' fill='%23006eff'/%3E%3C/svg%3E");
+    background-size: 33.33% 100%;
+    z-index: -1;
+    transition: top 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-wave:hover {
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.btn-wave:hover::before {
+    top: 0;
+    animation: moverOla 1.5s linear infinite;
+}
+@keyframes moverOla {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-33.33%); }
+}
 
-
-
-
+.btn-neon {
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgba(66, 66, 66, 0.568);
+    border-radius: 3px;
+    color: rgba(68, 67, 67, 0.568);
+    transition: color .6s, border .6s, box-shadow .6s, filter .6s ease;
+}
+.btn-neon:hover {
+    text-shadow: 0 0 10px rgba(7, 7, 224, 0.397);
+    color: rgba(0, 0, 255, 0.321);
+    border: 1.1px solid rgba(0, 0, 255, 0.345);
+    box-shadow: 0 0 30px rgba(0, 38, 255, 0.223), 0 0 60px rgba(0, 38, 255, 0.123);
+    filter: drop-shadow(0 0 10px rgba(7, 7, 224, 0.322));
+    transition: color .6s, border .6s, box-shadow .6s, filter .6s ease;
+}
 
 
 
