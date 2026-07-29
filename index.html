@@ -20,7 +20,7 @@
                 <ul class="nav__ul">
                     <li data-aos="fade-down" data-aos-duration="1600" class="nav__list"><a href="#">Nosotros</a></li>
                     <li data-aos="fade-down" data-aos-duration="1700" class="nav__list"><a href="#">Only CSS</a></li>
-                    <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">With JS</a></li>
+                    <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">With SVG</a></li>
                      <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">With GSAP</a></li>
                 </ul>
             </nav>
@@ -420,7 +420,16 @@ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
         <div class="css__container">
         
 <div class="buttoms__panel">
-    <button class="btn-opcion">Buttom</button><button class="btn-opcion">Buttom</button><button class="btn-opcion">Buttom</button><button class="btn-opcion">Buttom</button><button class="btn-opcion">Buttom</button><button class="btn-opcion">Buttom</button><button class="btn-opcion">Buttom</button><button class="btn-opcion">Buttom</button><button class="btn-opcion">Buttom</button><button class="btn-opcion">Buttom</button>
+    <button class="bg-[#0027ff] text-white font-black uppercase tracking-widest px-10 py-3 [clip-path:polygon(10%_0,100%_0,100%_70%,90%_100%,0_100%,0_30%)] hover:bg-[#0015ff] hover:[clip-path:polygon(0_0,90%_0,100%_30%,100%_100%,10%_100%,0_70%)] transition-all duration-300">Clip</button>
+    <button class="bg-transparent text-[#0027ff] font-bold px-8 py-3 rounded-lg border border-blue-900 shadow-[0_0_15px_blue,inset_0_0_15px_blue] hover:bg-[#0027ff] hover:text-black hover:shadow-[0_0_30px_blue] transition-all duration-300">Ligth</button>
+    <button class="bg-gradient-to-r from-indigo-500 via-blue-900 to-[#0027ff] text-white font-bold px-8 py-3 rounded-full bg-[length:200%_auto] hover:bg-right transition-all duration-500 shadow-lg hover:shadow-[#000c4f]">Next</button>
+    <button class="bg-gray-200 text-[#0027ff] font-semibold px-8 py-3 rounded-2xl shadow-[8px_8px_16px_#bebebe,-8px_-8px_16px_#bebebe] hover:shadow-[20px_20px_16px_transparent,-20px_-20px_16px_transparent]  hover:bg-[#0027ff] hover:text-white transition-all duration-300">Smoke</button>
+    <button class="bg-[#0027ff] text-white font-bold px-8 py-3 rounded-xl border-b-4 border-[#061b94] hover:brightness-110 active:border-b-0 active:translate-y-1 transition-all duration-100">Press Me</button>
+    <button class="bg-[#0027ff] text-white font-medium px-8 py-3 rounded-full shadow-[0_4px_14px_0_rgb(37,99,235,39%)] hover:shadow-[0_6px_20px_rgba(37,99,235,23%)] hover:-translate-y-1 focus:ring-4 focus:ring-blue-300 transition-all duration-300">Silicon Valley</button>
+    <button class="bg-black text-[#0027ff] font-mono text-sm uppercase tracking-widest px-8 py-3 border-2 border-[#0027ff] hover:bg-[#0027ff] hover:text-black transition-colors duration-200">Execute_</button>
+    <button class="text-[#0027ff] font-bold px-8 py-3 rounded-full border-2 border-[#0027ff] hover:bg-[#0027ff] hover:text-white hover:shadow-lg hover:shadow-[#010963] transition-all duration-300">Focus</button>
+    <button class="relative px-6 py-2 text-sm font-bold uppercase tracking-[0.3em] text-[#000754] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#000754] after:transition-transform after:duration-300 after:ease-out hover:after:origin-bottom-left hover:after:scale-x-100">Buttom</button>
+    <button class="bg-gradient-to-b from-[#3848ff] via-[#0116fa] to-[#000ea6] text-white font-extrabold px-8 py-3 rounded-full shadow-[inset_0_2px_4px_#000ea6,0_5px_15px_-5px_#000ea6] hover:shadow-[inset_0_2px_4px_#000ea6,0_10px_25px_-5px_#000ea6] hover:brightness-110 active:scale-95 transition-all duration-200 border border-yellow-300">Buttom</button>
     </div>
         <div class="code__panel">
             <button id="btn-copy" class="buttom-copiar">Copy</button>
@@ -439,7 +448,9 @@ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
     <button class="btn-opcion btn-svg-leave"><i class="bi bi-arrow-right-square svg-leave"></i><span>Leave</span></button>
     <button class="btn-opcion btn-svg-bell"><i class="bi bi-bell-fill svg-bell"></i><span>Notifications</span></button>
     <button class="btn-opcion btn-svg-msg"><i class="bi bi-chat-dots-fill svg-msg"></i>Message</button>
-    <button class="btn-opcion btn-svg-draw">Contact</button>
+    <button class="btn-opcion btn-svg-contact"><i class="bi bi-telephone-forward-fill"></i>
+        <span>Contact</span>
+    </button>
     <button class="btn-opcion">Buttom</button>
     <button class="btn-opcion">Buttom</button>
     <button class="btn-opcion">Buttom</button>
@@ -459,7 +470,7 @@ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
   <script>
     AOS.init();
   </script>
-
   <script src="script.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
