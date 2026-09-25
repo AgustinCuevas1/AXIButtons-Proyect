@@ -21,7 +21,7 @@
                     <li data-aos="fade-down" data-aos-duration="1600" class="nav__list"><a href="#">Nosotros</a></li>
                     <li data-aos="fade-down" data-aos-duration="1700" class="nav__list"><a href="#">Only CSS</a></li>
                     <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">With SVG</a></li>
-                     <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">With GSAP</a></li>
+                     <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">With TW</a></li>
                 </ul>
             </nav>
             <div data-aos="fade-down" data-aos-duration="2000" class="aexaz-navbar"><a href="#"></a>
@@ -65,377 +65,66 @@
         <div class="css__container">
         
 <div class="buttoms__panel">
-<button class="btn-opcion btn-left-to-right" data-code=".btn-left-to-right {
-    position: relative;
-    display: inline-block;
-    font-weight: bold;
-    color: blue;
-    background-color: transparent;
-    border: 2px solid blue;
-    cursor: pointer;
-    transition: color 0.4s ease;
-    z-index: 1;
-    overflow: hidden;
-    border-radius: 4px;
-}
-.btn-left-to-right::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: blue;
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
-}
-.btn-left-to-right:hover {
-    color: #ffffff;
-}
-.btn-left-to-right:hover::before {
-    transform: scaleX(1);
-}">To Right</button>
-<button class="btn-opcion btn-wave" data-code="
-.btn-wave {
-    position: relative;
-    display: inline-block;
-    font-weight: bold;
-    color: blue;
-    background-color: transparent;
-    border: 2px solid blue;
-    cursor: pointer;
-    transition: color 0.4s ease, border 0.4s ease;
-    z-index: 1;
-    overflow: hidden;
-    border-radius: 4px;
-    padding: 12px 24px;
-}
+<button class="btn-opcion btn-left-to-right" data-panel="classic" data-id="btn_left_to_rigth">To Right</button>
+<button class="btn-opcion btn-wave" data-panel="classic" data-id="btn_wave">Wave</button>
+<button class="btn-opcion btn-neon" data-panel="classic" data-id="btn_neon">Neon</button>
+<button class="btn-opcion btn-hover" data-panel="classic" data-id="btn_hover">Hover</button>
+<button class="btn-opcion btn-contact" data-panel="classic" data-id="btn_contact">Contact</button>
+<button class="btn-opcion btn-gradient" data-panel="classic" data-id="btn_gradient">Gradient</button>
+<button class="btn-opcion btn-3d" data-panel="classic" data-id="btn_3d">3D</button>
+<button class="btn-opcion btn-center" data-panel="classic" data-id="btn_center">Center</button>
+<button class="btn-opcion btn-elegant" data-panel="classic" data-id="btn_elegant">Elegant</button>
+<button class="btn-opcion btn-rgb" data-panel="classic" data-id="btn_rgb">
+    <span>RGB</span>
+</button>
 
-.btn-wave::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 300%;
-    height: 100%;
-    background-image: url('data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,50 C25,75 75,25 100,50 L100,100 L0,100 Z' fill='%23006eff'/%3E%3C/svg%3E');
-    background-size: 33.33% 100%;
-    z-index: -1;
-    transition: top 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-wave:hover {
-    border: 2px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-}
-.btn-wave:hover::before {
-    top: 0;
-}">Wave</button>
-<button class="btn-opcion btn-neon" data-code=".btn-neon {
-    background-color: transparent;
-    border: none;
-    border: 1px solid rgba(66, 66, 66, 0.568);
-    border-radius: 3px;
-    color: rgba(68, 67, 67, 0.568);
-    transition: color .6s ease, border .6s ease, box-shadow .6s ease, filter .6s ease;
-}
-.btn-neon:hover {
-    text-shadow: 0 0 10px rgba(7, 7, 224, 0.397);
-    color: rgba(0, 0, 255, 0.321);
-    border: 1.1px solid rgba(0, 0, 255, 0.345);
-    box-shadow: 0 0 30px rgba(0, 38, 255, 0.223), 0 0 60px rgba(0, 38, 255, 0.123);
-    filter: drop-shadow(0 0 10px rgba(7, 7, 224, 0.322));
-}">Neon</button>
-<button class="btn-opcion btn-hover" data-code=".btn-hover {
-    position: relative;
-    color: blue;
-    background-color: transparent;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-    outline: none;
-}
-
-.btn-hover::before,
-.btn-hover::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 2px solid transparent;
-    box-sizing: border-box;
-    border-radius: 3px;
-}
-.btn-hover::before {
-    top: 0;
-    left: 0;
-}
-.btn-hover::after {
-    bottom: 0;
-    right: 0;
-}
-.btn-hover:hover::before {
-    width: 100%;
-    height: 100%;
-    border-top-color: blue;
-    border-right-color: blue;
-    transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
-}
-.btn-hover:hover::after {
-    width: 100%;
-    height: 100%;
-    border-bottom-color: blue;
-    border-left-color: blue;
-    transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 0.9s;
-}">Hover</button>
-<button class="btn-opcion btn-contact" data-code=".btn-contact {
-    background-color: blue;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    font-weight: bolder;
-    transition: background .3s ease-out, color .3s ease-out, border .3s ease-out;
-}
-.btn-contact:hover{
-    background-color: transparent;
-    color: aliceblue;
-    border: 2px solid aliceblue;
-    transition: background .3s ease-out, color .3s ease-out, border .3s ease-out;
-}
-.btn-contact:active {
-    opacity: 0.7;
-}
-">Contact</button>
-<button class="btn-opcion btn-gradient" data-code="
-.btn-gradient {
-    font-weight: bold;
-    color: blue;
-    background-color: transparent;
-    border: 2px solid rgb(1, 4, 150);
-    border-radius: 3px;
-    transition: background .3s ease-out, color .3s ease-out, border .3s ease-out, box-shadow .3s ease-out;
-}
-.btn-gradient:hover {
-    background: linear-gradient(135deg, #4d59ff, #0300cc, #02008b);
-    border: 2px solid rgb(1, 4, 150);
-    color: white;
-    box-shadow: 0 0 20px rgba(80, 77, 255, 0.45), 0 0 30px rgba(14, 0, 204, 0.25);
-}">Gradient</button>
-<button class="btn-opcion btn-3d" data-code="
-.btn-3d {
-    color: aliceblue;
-    background-color: rgb(22, 22, 148);
-    border: none;
-    font-weight: bolder;
-    border: 1px solid rgba(7, 6, 68, 0);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-.btn-3d:hover {
-    box-shadow: -1px 1px #252147, -2px 2px #252147, -3px 3px #252147, -4px 4px #252147, -5px 5px #252147, -6px 6px #252147, -7px 7px #252147, -8px 8px #252147;
-    transform: translate(8px, -8px);
-}">3D</button>
-<button class="btn-opcion btn-center" data-code=".btn-center {
-display: inline-block;
-text-align: center;
-font-weight: bold;
-padding: 0.7em 2em;
-border: 3px solid blue;
-border-radius: 2px;
-position: relative;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-color: blue;
-text-decoration: none;
-transition: 0.3s ease all;
-z-index: 1;
-}
-.btn-center:before {
-transition: 0.5s all ease;
-position: absolute;
-top: 0;
-left: 50%;
-right: 50%;
-bottom: 0;
-opacity: 0;
-content: '';
-background-color: blue;
-z-index: -1;
-}
-.btn-center:hover, .btn-center:focus {
-color: white;
-}
-.btn-center:hover:before, .btn-center:focus:before {
-transition: 0.5s all ease;
-left: 0;
-right: 0;
-opacity: 1;
-}
-.btn-center:active {
-transform: scale(0.9);
-}
-">Center</button>
-<button class="btn-opcion btn-elegant" data-code=".btn-elegant {
-font-weight: bolder;
-background-color: transparent;
-display: inline-block;
-border: 2px solid blue;
-border-radius: 3px;
-transition: all 0.2s ease-in;
-position: relative;
-overflow: hidden;
-cursor: pointer;
-color: blue;
-z-index: 1;
-}
-
-.btn-elegant:before {
-content: '';
-position: absolute;
-left: 50%;
-transform: translateX(-50%) scaleY(1) scaleX(1.25);
-top: 100%;
-width: 140%;
-height: 180%;
-background-color: rgba(0, 0, 0, 0.05);
-border-radius: 50%;
-display: block;
-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-z-index: -1;
-}
-
-.btn-elegant:after {
-content: '';
-position: absolute;
-left: 55%;
-transform: translateX(-50%) scaleY(1) scaleX(1.45);
-top: 180%;
-width: 160%;
-height: 190%;
-background-color: #39bda7;
-border-radius: 50%;
-display: block;
-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-z-index: -1;
-}
-
-.btn-elegant:hover {
-color: aliceblue;
-border: 2px solid aliceblue;
-}
-
-.btn-elegant:hover:before {
-top: -35%;
-background-color: blue;
-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.btn-elegant:hover:after {
-top: -45%;
-background-color: blue;
-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-">Elegant</button>
-<button class="btn-opcion btn-rgb" data-code="/*!INPORTANT, this button use a <span> inside, in the html structure, like this: <button><span>Button</span></button>*/
-.btn-rgb {
-    font-weight: bolder;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(12, 16, 245, 0.25);
-    background: #0b0d13;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    overflow: hidden;
-    cursor: pointer;
-    opacity: 0.3;
-    box-shadow: inset 0 0 0 1px rgba(0, 83, 255, 0.16), 0 0 10px rgba(0, 89, 255, 0.12);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease, opacity 0.25s ease;
-}
-
-.btn-rgb span {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    color: rgba(12, 16, 245, 0.45);
-    transition: color 0.3s ease;
-}
-
-.btn-rgb::before,
-.btn-rgb::after {
-    content: '';
-    position: absolute;
-    inset: -2px;
-    border-radius: 3px;
-    z-index: 0;
-    pointer-events: none;
-    background: linear-gradient(90deg, #0b4cff, #002fff, #1100ff, #0b4cff);
-    background-size: 300% 300%;
-    background-position: 0% 50%;
-    transition: background-position 2.5s linear, opacity 0.3s ease;
-}
-
-.btn-rgb::before {
-    filter: blur(10px);
-    opacity: 0.35;
-}
-
-.btn-rgb::after {
-    inset: 0;
-    padding: 2px;
-    border-radius: 3px;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 1;
-}
-
-.btn-rgb:hover {
-    transform: translateY(-1px);
-    box-shadow: inset 0 0 0 1px rgba(0, 83, 255, 0.28), 0 0 14px rgba(0, 89, 255, 0.24);
-    opacity: 1;
-    color: aliceblue;
-}
-
-.btn-rgb:hover span {
-    color: #ffffff;
-}
-
-.btn-rgb:hover::before,
-.btn-rgb:hover::after {
-    background-position: 200% 50%;
-}
-"><span>RGB</span></button>
-    </div>
-        <div class="code__panel">
-            <button id="btn-copy" class="buttom-copiar">Copy</button>
-            <pre>
-            <code id="pantalla-codigo">Presione algun boton para ver su codigo...</code></pre>
-            </div>
+</div>
+<div class="code__panel" data-panel="classic" data-default-language="html">
+    <div class="code__panel-header">
+        <div class="code__tab-group">
+            <button class="code-tab active" type="button" data-language="html">HTML</button>
+            <button class="code-tab" type="button" data-language="css">CSS</button>
+            <button class="code-tab" type="button" data-language="js">JS</button>
         </div>
+        <button class="btn-copy buttom-copiar" type="button">Copy</button>
+    </div>
+    <pre class="code-block active" data-language="html"><code id="classic-html">Presione algun boton para ver su codigo...</code></pre>
+    <pre class="code-block" data-language="css"><code id="classic-css">Presione algun boton para ver su codigo...</code></pre>
+    <pre class="code-block" data-language="js"><code id="classic-js">Presione algun boton para ver su codigo...</code></pre>
+</div>
+        </div>
+
+
         <div class="section-title-container">
             <h2>TAILWIND BUTTONS</h2>
         </div>
         <div class="css__container">
         
 <div class="buttoms__panel">
-    <button class="bg-[#0027ff] text-white font-black uppercase tracking-widest px-10 py-3 [clip-path:polygon(10%_0,100%_0,100%_70%,90%_100%,0_100%,0_30%)] hover:bg-[#0015ff] hover:[clip-path:polygon(0_0,90%_0,100%_30%,100%_100%,10%_100%,0_70%)] transition-all duration-300">Clip</button>
-    <button class="bg-transparent text-[#0027ff] font-bold px-8 py-3 rounded-lg border border-blue-900 shadow-[0_0_15px_blue,inset_0_0_15px_blue] hover:bg-[#0027ff] hover:text-black hover:shadow-[0_0_30px_blue] transition-all duration-300">Ligth</button>
-    <button class="bg-gradient-to-r from-indigo-500 via-blue-900 to-[#0027ff] text-white font-bold px-8 py-3 rounded-full bg-[length:200%_auto] hover:bg-right transition-all duration-500 shadow-lg hover:shadow-[#000c4f]">Next</button>
-    <button class="bg-gray-200 text-[#0027ff] font-semibold px-8 py-3 rounded-2xl shadow-[8px_8px_16px_#bebebe,-8px_-8px_16px_#bebebe] hover:shadow-[20px_20px_16px_transparent,-20px_-20px_16px_transparent]  hover:bg-[#0027ff] hover:text-white transition-all duration-300">Smoke</button>
-    <button class="bg-[#0027ff] text-white font-bold px-8 py-3 rounded-xl border-b-4 border-[#061b94] hover:brightness-110 active:border-b-0 active:translate-y-1 transition-all duration-100">Press Me</button>
-    <button class="bg-[#0027ff] text-white font-medium px-8 py-3 rounded-full shadow-[0_4px_14px_0_rgb(37,99,235,39%)] hover:shadow-[0_6px_20px_rgba(37,99,235,23%)] hover:-translate-y-1 focus:ring-4 focus:ring-blue-300 transition-all duration-300">Silicon Valley</button>
-    <button class="bg-black text-[#0027ff] font-mono text-sm uppercase tracking-widest px-8 py-3 border-2 border-[#0027ff] hover:bg-[#0027ff] hover:text-black transition-colors duration-200">Execute_</button>
-    <button class="text-[#0027ff] font-bold px-8 py-3 rounded-full border-2 border-[#0027ff] hover:bg-[#0027ff] hover:text-white hover:shadow-lg hover:shadow-[#010963] transition-all duration-300">Focus</button>
-    <button class="relative px-6 py-2 text-sm font-bold uppercase tracking-[0.3em] text-[#000754] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#000754] after:transition-transform after:duration-300 after:ease-out hover:after:origin-bottom-left hover:after:scale-x-100">Buttom</button>
-    <button class="bg-gradient-to-b from-[#3848ff] via-[#0116fa] to-[#000ea6] text-white font-extrabold px-8 py-3 rounded-full shadow-[inset_0_2px_4px_#000ea6,0_5px_15px_-5px_#000ea6] hover:shadow-[inset_0_2px_4px_#000ea6,0_10px_25px_-5px_#000ea6] hover:brightness-110 active:scale-95 transition-all duration-200 border border-yellow-300">Buttom</button>
+    <button class="btn-opcion bg-[#0027ff] text-white font-black uppercase tracking-widest px-10 py-3 [clip-path:polygon(10%_0,100%_0,100%_70%,90%_100%,0_100%,0_30%)] hover:bg-[#0015ff] hover:[clip-path:polygon(0_0,90%_0,100%_30%,100%_100%,10%_100%,0_70%)] transition-all duration-300" data-panel="tailwind" data-id="clip">Clip</button>
+    <button class="btn-opcion bg-transparent text-[#0027ff] font-bold px-8 py-3 rounded-lg border border-blue-900 shadow-[0_0_15px_blue,inset_0_0_15px_blue] hover:bg-[#0027ff] hover:text-black hover:shadow-[0_0_30px_blue] transition-all duration-300" data-panel="tailwind" data-id="ligth">Ligth</button>
+    <button class="btn-opcion bg-gradient-to-r from-indigo-500 via-blue-900 to-[#0027ff] text-white font-bold px-8 py-3 rounded-full bg-[length:200%_auto] hover:bg-right transition-all duration-500 shadow-lg hover:shadow-[#000c4f]" data-panel="tailwind" data-id="next">Next</button>
+    <button class="btn-opcion bg-gray-200 text-[#0027ff] font-semibold px-8 py-3 rounded-2xl shadow-[8px_8px_16px_#bebebe,-8px_-8px_16px_#bebebe] hover:shadow-[20px_20px_16px_transparent,-20px_-20px_16px_transparent] hover:bg-[#0027ff] hover:text-white transition-all duration-300" data-panel="tailwind" data-id="smoke">Smoke</button>
+    <button class="btn-opcion bg-[#0027ff] text-white font-bold px-8 py-3 rounded-xl border-b-4 border-[#061b94] hover:brightness-110 active:border-b-0 active:translate-y-1 transition-all duration-100" data-panel="tailwind" data-id="press_me">Press Me</button>
+    <button class="btn-opcion bg-[#0027ff] text-white font-medium px-8 py-3 rounded-full shadow-[0_4px_14px_0_rgb(37,99,235,39%)] hover:shadow-[0_6px_20px_rgba(37,99,235,23%)] hover:-translate-y-1 focus:ring-4 focus:ring-blue-300 transition-all duration-300" data-panel="tailwind" data-id="silicon_valley">Silicon Valley</button>
+    <button class="btn-opcion bg-black text-[#0027ff] font-mono text-sm uppercase tracking-widest px-8 py-3 border-2 border-[#0027ff] hover:bg-[#0027ff] hover:text-black transition-colors duration-200" data-panel="tailwind" data-id="execute">Execute_</button>
+    <button class="btn-opcion text-[#0027ff] font-bold px-8 py-3 rounded-full border-2 border-[#0027ff] hover:bg-[#0027ff] hover:text-white hover:shadow-lg hover:shadow-[#010963] transition-all duration-300" data-panel="tailwind" data-id="focus">Focus</button>
+    <button class="btn-opcion relative px-6 py-2 text-sm font-bold uppercase tracking-[0.3em] text-[#000754] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#000754] after:transition-transform after:duration-300 after:ease-out hover:after:origin-bottom-left hover:after:scale-x-100" data-panel="tailwind" data-id="buttom_underline">Buttom</button>
+    <button class="btn-opcion bg-gradient-to-b from-[#3848ff] via-[#0116fa] to-[#000ea6] text-white font-extrabold px-8 py-3 rounded-full shadow-[inset_0_2px_4px_#000ea6,0_5px_15px_-5px_#000ea6] hover:shadow-[inset_0_2px_4px_#000ea6,0_10px_25px_-5px_#000ea6] hover:brightness-110 active:scale-95 transition-all duration-200 border border-yellow-300" data-panel="tailwind" data-id="buttom_glow">Buttom</button>
     </div>
-        <div class="code__panel">
-            <button id="btn-copy" class="buttom-copiar">Copy</button>
-            <pre>
-            <code id="pantalla-codigo">Presione algun boton para ver su codigo...</code></pre>
+    <div class="code__panel" data-panel="tailwind" data-default-language="html">
+        <div class="code__panel-header">
+            <div class="code__tab-group">
+                <button class="code-tab active" type="button" data-language="html">HTML</button>
+                <button class="code-tab" type="button" data-language="css">CSS</button>
+                <button class="code-tab" type="button" data-language="js">JS</button>
             </div>
+            <button class="btn-copy buttom-copiar" type="button">Copy</button>
+        </div>
+        <pre class="code-block active" data-language="html"><code id="tailwind-html">Presione algun boton para ver su codigo...</code></pre>
+        <pre class="code-block" data-language="css"><code id="tailwind-css">Presione algun boton para ver su codigo...</code></pre>
+        <pre class="code-block" data-language="js"><code id="tailwind-js">Presione algun boton para ver su codigo...</code></pre>
+    </div>
         </div>
         <div class="section-title-container">
             <h2>SVG BUTTONS</h2>
@@ -443,24 +132,34 @@ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
         <div class="css__container">
         
 <div class="buttoms__panel">
-    <button class="btn-opcion btn-svg-archives"><i class="bi bi-archive svg-archive"></i>Archives</button>
-    <button class="btn-opcion btn-svg-home"><i class="bi bi-house svg-home"></i>Home</button>
-    <button class="btn-opcion btn-svg-leave"><i class="bi bi-arrow-right-square svg-leave"></i><span>Leave</span></button>
-    <button class="btn-opcion btn-svg-bell"><i class="bi bi-bell-fill svg-bell"></i><span>Notifications</span></button>
-    <button class="btn-opcion btn-svg-msg"><i class="bi bi-chat-dots-fill svg-msg"></i>Message</button>
-    <button class="btn-opcion btn-svg-contact"><i class="bi bi-telephone-forward-fill"></i>
-        <span>Contact</span>
+    <button class="btn-opcion btn-svg-archives" data-panel="svg" data-id="archives"><i class="bi bi-archive svg-archive"></i>Archives</button>
+    <button class="btn-opcion btn-svg-home" data-panel="svg" data-id="home"><i class="bi bi-house svg-home"></i>Home</button>
+    <button class="btn-opcion btn-svg-leave" data-panel="svg" data-id="leave"><i class="bi bi-arrow-right-square svg-leave"></i><span>Leave</span></button>
+    <button class="btn-opcion btn-svg-bell" data-panel="svg" data-id="bell"><i class="bi bi-bell-fill svg-bell"></i><span>Notifications</span></button>
+    <button class="btn-opcion btn-svg-msg" data-panel="svg" data-id="msg"><i class="bi bi-chat-dots-fill svg-msg"></i>Message</button>
+    <button class="btn-opcion btn-svg-contact" data-panel="svg" data-id="contact"><i class="bi bi-telephone-forward-fill"></i>
+        <span>Phone</span>
     </button>
-    <button class="btn-opcion">Buttom</button>
-    <button class="btn-opcion">Buttom</button>
-    <button class="btn-opcion">Buttom</button>
-    <button class="btn-opcion">Buttom</button>
+    <button class="btn-opcion btn-svg-muted" data-panel="svg" data-id="muted"><span class="span-muted"><i class="bi bi-mic-mute-fill"></i>Muted</span>
+    <span class="span-heading"><i class="bi bi-mic-fill"></i>Heading</span></button>
+    <button class="btn-opcion btn-send-svg" type="button" data-panel="svg" data-id="send">
+        <span class="btn-send-text">Send</span>
+        <span class="btn-send-icon-wrap"><i class="bi bi-send-fill"></i></span>
+    </button>
     </div>
-        <div class="code__panel">
-            <button id="btn-copy" class="buttom-copiar">Copy</button>
-            <pre>
-            <code id="pantalla-codigo">Presione algun boton para ver su codigo...</code></pre>
+    <div class="code__panel" data-panel="svg" data-default-language="html">
+        <div class="code__panel-header">
+            <div class="code__tab-group">
+                <button class="code-tab active" type="button" data-language="html">HTML</button>
+                <button class="code-tab" type="button" data-language="css">CSS</button>
+                <button class="code-tab" type="button" data-language="js">JS</button>
             </div>
+            <button class="btn-copy buttom-copiar" type="button">Copy</button>
+        </div>
+        <pre class="code-block active" data-language="html"><code id="svg-html">Presione algun boton para ver su codigo...</code></pre>
+        <pre class="code-block" data-language="css"><code id="svg-css">Presione algun boton para ver su codigo...</code></pre>
+        <pre class="code-block" data-language="js"><code id="svg-js">Presione algun boton para ver su codigo...</code></pre>
+    </div>
         </div>
 
     </section>
