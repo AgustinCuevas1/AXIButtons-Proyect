@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>AXI Buttoms - Una galeria de efectos y animaciones para botones</title>
 </head>
@@ -18,10 +20,10 @@
 
             <nav class="nav">
                 <ul class="nav__ul">
-                    <li data-aos="fade-down" data-aos-duration="1600" class="nav__list"><a href="#">Nosotros</a></li>
-                    <li data-aos="fade-down" data-aos-duration="1700" class="nav__list"><a href="#">Only CSS</a></li>
-                    <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">With SVG</a></li>
-                     <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#">With TW</a></li>
+                    <li data-aos="fade-down" data-aos-duration="1600" class="nav__list"><a href="#about-us">Nosotros</a></li>
+                    <li data-aos="fade-down" data-aos-duration="1700" class="nav__list"><a href="#css-section">CSS</a></li>
+                    <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#svg-section">SVG</a></li>
+                     <li data-aos="fade-down" data-aos-duration="1800" class="nav__list"><a href="#tw-section">Tailwind CSS</a></li>
                 </ul>
             </nav>
             <div data-aos="fade-down" data-aos-duration="2000" class="aexaz-navbar"><a href="#"></a>
@@ -53,14 +55,14 @@
         </div>
 </div>
 <section class="about-us__section">
-    <div class="about-us__container">
+    <div class="about-us__container" id="about-us">
         <h2>SOBRE NOSOTROS</h2>
         <p>El creador de esta pagina web es <a href="">Aexaz</a>!, una agencia de desarrollo web en Argentina, si algo de lo que esta aqui te resulto util, considera recomendar esta pagina en tus proyectos o redes sociales, gracias por visitarnos.</p>
     </div>
 </section>
     <section class="css-section">
-        <div class="section-title-container">
-            <h2>CLASSIC CSS BUTTONS</h2>
+        <div class="section-title-container" id="css-section">
+            <h2 class="section-title">CLASSIC CSS BUTTONS</h2>
         </div>
         <div class="css__container">
         
@@ -95,8 +97,8 @@
         </div>
 
 
-        <div class="section-title-container">
-            <h2>TAILWIND BUTTONS</h2>
+        <div class="section-title-container" id="tw-section">
+            <h2 class="section-title">TAILWIND BUTTONS</h2>
         </div>
         <div class="css__container">
         
@@ -126,25 +128,25 @@
         <pre class="code-block" data-language="js"><code id="tailwind-js">Presione algun boton para ver su codigo...</code></pre>
     </div>
         </div>
-        <div class="section-title-container">
-            <h2>SVG BUTTONS</h2>
+        <div class="section-title-container" id="svg-section">
+            <h2 class="section-title">SVG BUTTONS</h2>
         </div>
-        <div class="css__container">
+        <div class="css__container svg__container">
         
 <div class="buttoms__panel">
-    <button class="btn-opcion btn-svg-archives" data-panel="svg" data-id="archives"><i class="bi bi-archive svg-archive"></i>Archives</button>
-    <button class="btn-opcion btn-svg-home" data-panel="svg" data-id="home"><i class="bi bi-house svg-home"></i>Home</button>
-    <button class="btn-opcion btn-svg-leave" data-panel="svg" data-id="leave"><i class="bi bi-arrow-right-square svg-leave"></i><span>Leave</span></button>
-    <button class="btn-opcion btn-svg-bell" data-panel="svg" data-id="bell"><i class="bi bi-bell-fill svg-bell"></i><span>Notifications</span></button>
-    <button class="btn-opcion btn-svg-msg" data-panel="svg" data-id="msg"><i class="bi bi-chat-dots-fill svg-msg"></i>Message</button>
-    <button class="btn-opcion btn-svg-contact" data-panel="svg" data-id="contact"><i class="bi bi-telephone-forward-fill"></i>
+    <button class="btn-opcion btn-svg-archives" data-panel="svg" data-id="archives"><svg class="svg-archive" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v5H3z"/><path d="M5 9v11h14V9M10 13h4"/></svg>Archives</button>
+    <button class="btn-opcion btn-svg-home" data-panel="svg" data-id="home"><svg class="svg-home" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v11h14V9M9 20v-7h6v7"/></svg>Home</button>
+    <button class="btn-opcion btn-svg-leave" data-panel="svg" data-id="leave"><svg class="svg-leave" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4h7v16h-7"/><path d="M3 12h11m-4-4 4 4-4 4"/></svg><span>Leave</span></button>
+    <button class="btn-opcion btn-svg-bell" data-panel="svg" data-id="bell"><svg class="svg-bell" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg><span>Notifications</span></button>
+    <button class="btn-opcion btn-svg-msg" data-panel="svg" data-id="msg"><svg class="svg-msg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v12H9l-5 4z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg>Message</button>
+    <button class="btn-opcion btn-svg-contact" data-panel="svg" data-id="contact"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 3a14 14 0 0 1-6-6l3-2z"/><path d="m14 4 6 6m0-6-6 6"/></svg>
         <span>Phone</span>
     </button>
-    <button class="btn-opcion btn-svg-muted" data-panel="svg" data-id="muted"><span class="span-muted"><i class="bi bi-mic-mute-fill"></i>Muted</span>
-    <span class="span-heading"><i class="bi bi-mic-fill"></i>Heading</span></button>
+    <button class="btn-opcion btn-svg-muted" data-panel="svg" data-id="muted"><span class="span-muted"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 12 5M19 11a7 7 0 0 1-1 3M12 19v3m-4 0h8M3 3l18 18"/></svg>Muted</span>
+    <span class="span-heading"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 19v3m-4 0h8"/></svg>Heading</span></button>
     <button class="btn-opcion btn-send-svg" type="button" data-panel="svg" data-id="send">
         <span class="btn-send-text">Send</span>
-        <span class="btn-send-icon-wrap"><i class="bi bi-send-fill"></i></span>
+        <span class="btn-send-icon-wrap"><svg class="svg-send" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></span>
     </button>
     </div>
     <div class="code__panel" data-panel="svg" data-default-language="html">
@@ -164,6 +166,30 @@
 
     </section>
 
+    <section class="coming-soon" aria-labelledby="coming-soon-title">
+        <div class="coming-soon__content">
+            <span class="coming-soon__eyebrow"><span aria-hidden="true"></span> AXI // NUEVA TANDA</span>
+            <h2 id="coming-soon-title">Más botones. Más movimiento.</h2>
+            <p>La galería sigue creciendo. Pronto vas a tener nuevos efectos para explorar y llevar a tus proyectos.</p>
+        </div>
+        <div class="coming-soon__status" aria-label="Nuevos botones próximamente">
+            <span class="coming-soon__status-light" aria-hidden="true"></span>
+            <span>PRÓXIMAMENTE</span>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <a class="site-footer__brand" href="#about-us" aria-label="AXI Buttoms, sobre nosotros">
+            <span class="site-footer__brand-mark">AXI<span aria-hidden="true">.</span></span>
+            <span class="site-footer__brand-name">BUTTOMS <span>/ LAB</span></span>
+        </a>
+        <nav class="site-footer__nav" aria-label="Explorar galerías">
+            <a href="#css-section">CSS</a>
+            <a href="#tw-section">TAILWIND</a>
+            <a href="#svg-section">SVG</a>
+        </nav>
+        <span class="site-footer__signature">AEXAZ <span aria-hidden="true">//</span> ARGENTINA</span>
+    </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
